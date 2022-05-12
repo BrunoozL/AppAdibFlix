@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdibFlix.MainPage"
+             BackgroundColor="#2f2f30">
+
+
+    <Grid ColumnDefinitions="*, *"
+          RowDefinitions="*, *, *, *"
+          Padding="10">
+
+
+        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Button Text="Acao" Grid.Row="1" Grid.Column="0" HorizontalOptions="Fill"
+                    VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Acao"/>
+            <Button Text="Aventura" Grid.Row="1" Grid.Column="1" HorizontalOptions="Fill"
+                    VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Aventura"/>
+            <Button Text="Terror" Grid.Row="2" Grid.Column="0" HorizontalOptions="Fill"
+                    VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Terror"/>
+            <Button Text="Comedia" Grid.Row="2" Grid.Column="1" HorizontalOptions="Fill"
+                    VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Comedia"/>
+
+    </Grid>
+</ContentPage>
